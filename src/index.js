@@ -1,4 +1,4 @@
-import {createRouter , createWebHistory} from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 
 import cardCommunityListComponent from "./community/components/card-community-list.component.vue";
 import petsComponent from "./ezvet/components/pets/pets.component.vue";
