@@ -1,11 +1,11 @@
 <template>
     <div class="appointment-card">
       <h3>Consulta Veterinaria</h3>
-      <p><strong>Fecha:</strong> {{ date }}</p>
-      <p><strong>Hora:</strong> {{ time }}</p>
+      <p><strong>Date:</strong> {{ date }}</p>
+      <p><strong>Time:</strong> {{ time }}</p>
       <p><strong>Doctor:</strong> {{ doctor }}</p>
-      <p><strong>Mascota:</strong> {{ pet }}</p>
-      <p><strong>Descripción:</strong> {{ description }}</p>
+      <p><strong>Pet:</strong> {{ pet }}</p>
+      <p><strong>Description:</strong> {{ description }}</p>
     </div>
   </template>
   
