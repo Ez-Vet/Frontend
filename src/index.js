@@ -6,6 +6,12 @@ import petsComponent from "./ezvet/components/pets/pets.component.vue";
 const routes = [
     { path: '/community', component: cardCommunityListComponent },
     { path: '/pets', component: petsComponent },
+    //{ path: '/appointments', component:  },
+    //{ path: '/notifications', component:  },
+    //{ path: '/home', component:  },
+    //{ path: '/contact', component:  },
+    //{ path: '/login', component:  },
+    //{ path: '/register', component:  },
 ]
 
 const router = createRouter({
