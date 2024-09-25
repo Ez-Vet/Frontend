@@ -1,14 +1,27 @@
 {
-  "pet": "Pet",
-  "add_pet": "Add Pet",
-  "hide": "Hide",
-  "show_more": "Show More",
-  "show_less": "Show Less",
-  "pet_name": "Pet Name",
-  "species": "Species",
-  "age": "Age",
-  "description": "Description"
+  "vet": {
+    "pet": "Pet",
+    "add_pet": "Add Pet",
+    "hide": "Hide",
+    "show_more": "Show More",
+    "show_less": "Show Less",
+    "pet_name": "Pet Name",
+    "species": "Species",
+    "age": "Age",
+    "description": "Description"
+  },
+  "Access": {
+    "Login": "Iniciar Sesión",
+    "Register": "Registrarse",
+    "Username": "Usuario",
+    "uLabel": "ingresa tu nombre de usuario",
+    "Password": "Contraseña",
+    "pLabel": "ingresa tu contraseña",
+    "C_password": "Confirmar Contraseña",
+    "cpLabel": "confirma tu contraseña",
+    "SignIn": "Registrarse",
+    "ToLogin": "¿Ya tienes una cuenta?",
+    "ToRegister": "Crear cuenta",
+    "tuition": "colegiatura"
+  }
 }
-
-  
-
