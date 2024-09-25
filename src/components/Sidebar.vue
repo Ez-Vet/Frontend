@@ -5,11 +5,13 @@
       </div>
       <nav>
         <ul>
+          <li><router-link to="/login"><i class="fas fa-home"></i> Login</router-link></li>
           <li><router-link to="/home"><i class="fas fa-home"></i> Inicio</router-link></li>
           <li><router-link to="/appointments"><i class="fas fa-calendar"></i> Citas</router-link></li>
           <li><router-link to="/pets"><i class="fas fa-paw"></i> Mascotas</router-link></li>
           <li><router-link to="/community"><i class="fas fa-users"></i> Comunidad</router-link></li>
           <li><router-link to="/contact"><i class="fas fa-envelope"></i> Contacto</router-link></li>
+
         </ul>
       </nav>
     </div>
