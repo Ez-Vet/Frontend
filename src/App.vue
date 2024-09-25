@@ -7,9 +7,9 @@
   </template>
   
   <script>
-  import Sidebar from './components/Sidebar.vue'
-  import MainContent from './components/MainContent.vue'
-  import NotificationBell from './components/NotificationBell.vue'
+  import Sidebar from './components/Sidebar.componet.vue'
+  import MainContent from './components/MainContent.component.vue'
+  import NotificationBell from './components/NotificationBell.component.vue'
   
   export default {
     name: 'App',
