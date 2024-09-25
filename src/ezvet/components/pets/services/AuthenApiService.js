@@ -1,5 +1,5 @@
 import axios from "axios";
-import { User } from "../model/user.ententy"
+import { User } from "../../../model/user.ententy"
 
 export class AuthenApiService {
 
