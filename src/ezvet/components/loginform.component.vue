@@ -1,7 +1,7 @@
 <script>
 
-import {AuthenApiService} from  "../../services/AuthenApiService.js";
-import changelangComponent from "../other/changelang.component.vue";
+import {AuthenApiService} from  "../components/pets/services/AuthenApiService";
+import changelangComponent from "../components/pets/";
 
 
 
