@@ -12,3 +12,4 @@ app.use(i18n);
 app.component('pv-card', Card)
 
 app.mount('#app')
+
