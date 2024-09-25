@@ -10,15 +10,36 @@ export default {
     petsComponent,
   },
 }
-
 </script>
 
+
 <template>
-  <sidebar/>
-  <pets-component class="content"/>
+  <div class="container">
+  <sidebar class="sidebar"/>
+  <router-view class="content"/>
+  </div>
 
 </template>
 
+
+<style scoped>
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  flex: 0 0 250;
+  position: sticky;
+  top: 0;
+}
+
+.content{
+  flex: 1;
+}
+
+</style>
 
 
 
