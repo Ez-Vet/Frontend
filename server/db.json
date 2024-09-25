@@ -6,8 +6,7 @@
             "password": "admin123",
             "name": "Maria",
             "lastname": "gonzales",
-            "email": "maria@example.com",
-            "trial": true
+            "email": "maria@example.com"
         }
     ],
     "veterinario": [
