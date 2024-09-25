@@ -12,7 +12,8 @@ export default {
         description: ''
       },
       showMore: [],  // Initialize as an empty object
-      showAddPetForm: false
+      showAddPetForm: false,
+      currentLanguage: 'en'
     };
   },
   mounted() {
@@ -59,39 +60,42 @@ export default {
     },
     toggleAddPetForm() {
       this.showAddPetForm = !this.showAddPetForm;
+    },
+    changeLanguage() {
+      this.$i18n.locale = this.currentLanguage;
     }
   }
 };
 </script>
 
 <template>
+
   <div class="pet-list-container">
-    <h1>Pets
-      <button @click="toggleAddPetForm">
-      {{ showAddPetForm ? "Hide" : "Add Pet" }}
-    </button>
-    </h1>
 
-    <!-- Add Pet Form -->
-
-    <br>
-    <div v-if="showAddPetForm" class="add-pet-form">
-      <input v-model="newPet.name" placeholder="Pet Name" />
-      <input v-model="newPet.type" placeholder="Pet Type" />
-      <input v-model.number="newPet.age" placeholder="Pet Age" type="number" />
-      <textarea v-model="newPet.description" placeholder="Description"></textarea>
-      <button @click="addPet">Add Pet</button>
+    <div>
+      <select v-model="currentLanguage" @change="changeLanguage">
+        <option value="en">EN</option>
+        <option value="es">ES</option>
+      </select>
     </div>
 
     <!-- List of Pet Cards -->
     <div class="pet-list">
       <div v-for="pet in pets" :key="pet.id" class="pet-card">
         <div class="pet-info">
-          <h2>{{ pet.name }} ({{ pet.type }})</h2>
-          <p>Age: {{ pet.age }}</p>
-          <p v-if="showMore[pet.id]">{{ pet.description }}</p>
+          <h2>{{ pet.name }}</h2>
+          <hr>
+          <h3>{{ $t('species') }}</h3>
+          <p>{{ pet.type }}</p>
+          <h3>{{ $t('age') }}</h3>
+          <p>{{ pet.age }}</p>
+
+          <div v-if="showMore[pet.id]">
+            <h3>{{ $t('description') }}</h3>
+            <p>{{ pet.description }}</p>
+          </div>
           <button @click="toggleShowMore(pet.id)">
-            {{ showMore[pet.id] ? "Show Less" : "Show More" }}
+            {{ showMore[pet.id] ? $t("show_less") : $t("show_more") }}
           </button>
         </div>
         <div class="pet-image-container">
@@ -103,6 +107,19 @@ export default {
         </div>
       </div>
     </div>
+
+    <!-- Add Pet Form -->
+    <button @click="toggleAddPetForm">
+      {{ showAddPetForm ? $t("hide") : $t("add_pet") }}
+    </button>
+    <br>
+    <div v-if="showAddPetForm" class="add-pet-form">
+      <input v-model="newPet.name" placeholder=""/>
+      <input v-model="newPet.type" placeholder="" />
+      <input v-model.number="newPet.age" placeholder="" type="number" />
+      <textarea v-model="newPet.description" placeholder=""></textarea>
+      <button @click="addPet">Add Pet</button>
+    </div>
   </div>
 </template>
 
@@ -110,7 +127,7 @@ export default {
 
 <style scoped>
 .pet-list-container {
-  background-color: #407cc0;
+  background-color: #8bdcd6;
   padding: 20px;
   color: white;
 }
@@ -149,13 +166,13 @@ button {
   padding: 8px 12px;
   cursor: pointer;
   border: none;
-  background-color: #0056b3;
+  background-color: #2c2c2c;
   color: white;
   border-radius: 4px;
 }
 
 button:hover {
-  background-color: #003c80;
+  background-color: #888888;
 }
 
 .pet-info {

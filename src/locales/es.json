@@ -1,0 +1,11 @@
+{
+  "pet": "Mascota",
+  "add_pet": "Agregar Mascota",
+  "hide": "Ocultar",
+  "show_more": "Ver Más",
+  "show_less": "Ver Menos",
+  "pet_name": "Nombre de Mascota",
+  "species": "Especie",
+  "age": "Edad",
+  "description": "Descripción"
+}
