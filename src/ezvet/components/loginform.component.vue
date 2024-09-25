@@ -60,8 +60,8 @@ export default {
 <template>
   <pv-toolbar  class="w-full fixed top-0 left-0 flex items-center justify-between p-4">
     <template #end>
-
       <changelangComponent></changelangComponent>
+      
     </template>
   </pv-toolbar>
   <div>
