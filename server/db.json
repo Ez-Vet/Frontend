@@ -1,0 +1,25 @@
+{
+  "pets": [
+    {
+      "id": "1",
+      "name": "Buddy",
+      "type": "Dog",
+      "age": 3,
+      "description": "Vacunas al día. Desparasitación pendiente."
+    },
+    {
+      "id": "2",
+      "name": "Whiskers",
+      "type": "Cat",
+      "age": 2,
+      "description": "Vacunas y desparasitación al día."
+    },
+    {
+      "id": "920d",
+      "name": "Sox",
+      "type": "Dog",
+      "age": 9,
+      "description": "Vacunas pendientes."
+    }
+  ]
+}

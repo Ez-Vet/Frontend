@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <template>
     <div id="app">
       <div class="sidebar">
@@ -16,6 +17,19 @@
         </nav>
       </div>
       <div class="content">
+=======
+<script setup>
+import petsComponent from "./ezvet/components/pets/pets.component.vue";
+import Card from "primevue/card";
+</script>
+
+<template>
+
+<pets-component/>
+
+
+</template>
+>>>>>>> 32a82ab15c07d19521fd56d77293c719876429ae
 
         <div class="pet-card">
           <h2>{{ $t('name') }}</h2>
