@@ -1,0 +1,12 @@
+{
+    "title": "Pending Appointment",
+    "appointment": {
+      "date": "Date",
+      "time": "Time",
+      "pet": "Pet",
+      "description": "Description"
+    },
+    "button": {
+      "schedule": "Schedule an Appointment"
+    }
+  }

@@ -1,0 +1,12 @@
+{
+    "title": "Cita Pendiente",
+    "appointment": {
+      "date": "Fecha",
+      "time": "Hora",
+      "pet": "Mascota",
+      "description": "Descripción"
+    },
+    "button": {
+      "schedule": "Agendar una Cita"
+    }
+  }
