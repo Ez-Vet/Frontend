@@ -35,7 +35,7 @@ export default {
           <pv-inputtext type="email" id="email" class="custom-input cursor-text" v-model="value" size="small" toggleMask
                         placeholder="enter your email"/>
 
-          <label for="tuition" class="text-left">Tuition</label>
+          <label for="tuition" class="text-left">{{$t('Access.tuition')}}</label>
           <pv-inputtext type="text" id="tuition" class="custom-input cursor-text" v-model="value" size="small" toggleMask
                         placeholder="enter your tuition"/>
 
