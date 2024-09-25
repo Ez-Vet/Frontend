@@ -2,7 +2,6 @@
     <div class="sidebar">
       <div class="logo">
         <img src="../img/image 2.png" alt="Logo" />
-        <h2>ez.Vet</h2>
       </div>
       <nav>
         <ul>
