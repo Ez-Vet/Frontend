@@ -5,7 +5,7 @@
     </div>
     <ul>
       <li>
-        <router-link to="/" class="menu-item">
+        <router-link to="/" class="menu-item active">
           <i class="fas fa-home"></i> Inicio
         </router-link>
       </li>
@@ -25,7 +25,7 @@
         </router-link>
       </li>
       <li>
-        <router-link to="/contacto" class="menu-item active">
+        <router-link to="/contacto" class="menu-item ">
           <i class="fas fa-globe"></i> Contacto
         </router-link>
       </li>
@@ -59,7 +59,7 @@ export default {
 
 .logo h2 {
   color: white;
-  font-size: 24px;
+  font-size: 40px;
   margin-bottom: 20px;
 }
 
