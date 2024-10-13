@@ -3,6 +3,7 @@ import App from './App.vue'
 import PrimeVue from 'primevue/config'
 import Card from 'primevue/card'
 import i18n from './i18n'
+import '@fortawesome/fontawesome-free/css/all.css'
 
 const app = createApp(App)
 

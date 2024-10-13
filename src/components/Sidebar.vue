@@ -5,7 +5,7 @@
     </div>
     <ul>
       <li>
-        <router-link to="/" class="menu-item active">
+        <router-link to="/" class="menu-item ">
           <i class="fas fa-home"></i> Inicio
         </router-link>
       </li>
@@ -15,7 +15,7 @@
         </router-link>
       </li>
       <li>
-        <router-link to="/mascotas" class="menu-item">
+        <router-link to="/mascotas" class="menu-item active">
           <i class="fas fa-dog"></i> Mascotas
         </router-link>
       </li>
