@@ -51,7 +51,7 @@ export default {
   width: 250px;
   height: 93vh;
   padding: 20px;
-  color: white;
+  color: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -64,7 +64,7 @@ export default {
 }
 
 .logo span {
-  color: #65C6BF;
+  color: #8BDCD6;
 }
 
 ul {
@@ -78,7 +78,7 @@ ul li {
 }
 
 ul li .menu-item {
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -112,6 +112,6 @@ ul li .menu-item:hover {
 
 .user-icons .user-icon:hover,
 .user-icons .logout-icon:hover {
-  color: #65C6BF;
+  color: #8BDCD6;
 }
 </style>

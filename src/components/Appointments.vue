@@ -25,8 +25,8 @@ export default {
 <style scoped>
 .appointments-container {
   padding: 20px;
-  background-color: #a4e4e4;
-  min-height: 100vh;
+  background-color: #8BDCD6;
+  min-height: 80vh;
 }
 
 .header-content {

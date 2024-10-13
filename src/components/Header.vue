@@ -25,7 +25,7 @@ export default {
 }
 
 .language-button:hover {
-  background-color: #55d3cb;
+  background-color: #8BDCD6;
   color: white;
 }
 </style>

@@ -51,10 +51,9 @@ export default {
 
 .main-content {
   flex-grow: 1;
-  background-color: #a8dfe2; /* Fondo verde claro */
+  background-color: #8BDCD6; /* Fondo verde claro */
   padding: 20px;
-  position: relative;
-  height: auto;
+  min-height: 50vh;
 }
 
 .language-switcher {
