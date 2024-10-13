@@ -10,9 +10,10 @@
         <li><i class="fas fa-users"></i> Comunidad</li>
         <li class="active"><i class="fas fa-globe"></i> Contacto</li>
       </ul>
+      <!-- Usuario y botón de salida -->
       <div class="user">
-        <i class="fas fa-user-circle"></i>
-        <i class="fas fa-sign-out-alt"></i>
+        <i class="fas fa-user-circle"></i> <!-- Icono de perfil -->
+        <i class="fas fa-sign-out-alt"></i> <!-- Botón de salida -->
       </div>
     </div>
   </template>
@@ -26,10 +27,13 @@
   <style scoped>
   .sidebar {
     background-color: #735DAB;
-    width: 200px;
+    width: 250px;
     height: 100vh;
     padding: 20px;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Alinea los elementos en la parte superior e inferior */
   }
   
   .logo h2 {
@@ -59,13 +63,19 @@
   }
   
   .user {
-    margin-top: 50px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Separar los iconos */
+    align-items: center;            /* Alinearlos verticalmente */
+    margin-top: auto;               /* Moverlo hacia el fondo de la barra lateral */
   }
   
   .user i {
     font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .user i:hover {
+    color: #65C6BF; /* Cambiar el color al pasar el ratón */
   }
   </style>
   

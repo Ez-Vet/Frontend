@@ -1,5 +1,10 @@
 <template>
     <div class="contact-page">
+      <!-- Campana de notificaciones -->
+      <div class="notification-bell">
+        <i class="fas fa-bell"></i>
+      </div>
+      <!-- Título y resto del contenido de contacto -->
       <h2>Contact</h2>
       <div class="contact-info">
         <div class="info-item">
@@ -30,20 +35,32 @@
   
   <style scoped>
   .contact-page {
+    flex: 1;
     padding: 30px;
     background-color: #A8DFE2;
-    height: 100vh;
-    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Para la campana */
   }
   
-  h2 {
-    margin-bottom: 20px;
+  .notification-bell {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .notification-bell i {
+    font-size: 40px;
+    color: #000;
   }
   
   .contact-info {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr); /* Mantener 2 columnas */
+    grid-gap: 190px;
+    width: 50%; /* Reducimos el ancho al 50% */
+    max-width: 900px; /* Ancho máximo para pantallas más grandes */
   }
   
   .info-item {
@@ -52,6 +69,8 @@
     border-radius: 10px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
   }
   
   .info-item i {

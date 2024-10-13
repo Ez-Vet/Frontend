@@ -21,11 +21,10 @@
   <style>
   #app {
     display: flex;
-    flex-direction: row;
-  }
-  
-  .contact {
-    flex: 1;
+    height: 98vh;  /* Ocupa toda la altura de la pantalla */
+    width: 99vw;   /* Ocupa todo el ancho de la pantalla */
+    overflow: hidden; /* Evita scroll innecesario */
   }
   </style>
+  
   
