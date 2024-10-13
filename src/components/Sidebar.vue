@@ -5,7 +5,7 @@
     </div>
     <ul>
       <li>
-        <router-link to="/" class="menu-item">
+        <router-link to="/" class="menu-item active">
           <i class="fas fa-home"></i> {{ $t('home') }}
         </router-link>
       </li>
@@ -49,9 +49,9 @@ export default {
 .sidebar {
   background-color: #735DAB;
   width: 250px;
-  height: 100vh;
+  height: 93vh;
   padding: 20px;
-  color: white;
+  color: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -59,12 +59,12 @@ export default {
 
 .logo h2 {
   color: white;
-  font-size: 24px;
+  font-size: 40px;
   margin-bottom: 20px;
 }
 
 .logo span {
-  color: #65C6BF;
+  color: #8BDCD6;
 }
 
 ul {
@@ -78,7 +78,7 @@ ul li {
 }
 
 ul li .menu-item {
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -112,6 +112,6 @@ ul li .menu-item:hover {
 
 .user-icons .user-icon:hover,
 .user-icons .logout-icon:hover {
-  color: #65C6BF;
+  color: #8BDCD6;
 }
 </style>
