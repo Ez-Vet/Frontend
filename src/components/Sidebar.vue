@@ -6,35 +6,35 @@
     <ul>
       <li>
         <router-link to="/" class="menu-item">
-          <i class="fas fa-home"></i> Inicio
+          <i class="fas fa-home"></i> {{ $t('home') }}
         </router-link>
       </li>
       <li>
         <router-link to="/citas" class="menu-item">
-          <i class="fas fa-book"></i> Citas
+          <i class="fas fa-book"></i> {{ $t('appointments') }}
         </router-link>
       </li>
       <li>
         <router-link to="/mascotas" class="menu-item">
-          <i class="fas fa-dog"></i> Mascotas
+          <i class="fas fa-dog"></i> {{ $t('pets') }}
         </router-link>
       </li>
       <li>
         <router-link to="/comunidad" class="menu-item">
-          <i class="fas fa-users"></i> Comunidad
+          <i class="fas fa-users"></i> {{ $t('community') }}
         </router-link>
       </li>
       <li>
-        <router-link to="/contacto" class="menu-item active">
-          <i class="fas fa-globe"></i> Contacto
+        <router-link to="/contacto" class="menu-item">
+          <i class="fas fa-globe"></i> {{ $t('contact') }}
         </router-link>
       </li>
     </ul>
-
+    
     <!-- Íconos de perfil y cerrar sesión -->
     <div class="user-icons">
-      <i class="fas fa-user-circle user-icon"></i>
-      <i class="fas fa-sign-out-alt logout-icon"></i>
+      <i class="fas fa-user-circle user-icon"></i> {{ $t('user') }}
+      <i class="fas fa-sign-out-alt logout-icon"></i> {{ $t('logout') }}
     </div>
   </div>
 </template>
@@ -49,12 +49,12 @@ export default {
 .sidebar {
   background-color: #735DAB;
   width: 250px;
-  height: 95vh;
+  height: 100vh;
   padding: 20px;
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Alinea los elementos de la parte superior e inferior */
+  justify-content: space-between;
 }
 
 .logo h2 {
@@ -115,5 +115,3 @@ ul li .menu-item:hover {
   color: #65C6BF;
 }
 </style>
-
-  
