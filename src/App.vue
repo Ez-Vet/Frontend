@@ -11,14 +11,14 @@
 <script>
 import Sidebar from './components/Sidebar.vue';
 import Header from './components/Header.vue'; 
-//import Appointments from './components/Appointments.vue';
+import Contact from './components/Contact.vue';
 
 export default {
   name: 'App',
   components: {
     Sidebar,
     Header,  
-    Appointments,
+    Contact,
   },
 };
 </script>
