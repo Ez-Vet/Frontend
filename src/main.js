@@ -1,13 +1,14 @@
 import { createApp } from 'vue';
 import App from './App.vue';
 import PrimeVue from 'primevue/config';
+import Aura from '@primevue/themes/aura';
 import { createI18n } from 'vue-i18n';
 
 // PrimeVue components
 import Button from 'primevue/button';
 import Card from 'primevue/card';
-import 'primevue/resources/themes/saga-blue/theme.css';
-import 'primevue/resources/primevue.min.css';
+//import 'primevue/resources/themes/saga-blue/theme.css';
+//import 'primevue/resources/primevue.min.css';
 import 'primeicons/primeicons.css';
 
 // Import locales
@@ -20,13 +21,17 @@ const messages = {
   es,
 };
 const i18n = createI18n({
-  locale: 'es', // Default language
-  fallbackLocale: 'en',
+  locale: 'en', // Default language
+  fallbackLocale: 'es',
   messages,
 });
 
 const app = createApp(App);
-
+app.use(PrimeVue, {
+    theme: {
+        preset: Aura
+    }
+});
 app.use(PrimeVue);
 app.use(i18n);
 

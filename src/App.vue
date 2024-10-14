@@ -3,7 +3,7 @@
       <!-- Sidebar -->
       <aside class="sidebar">
         <div class="logo">
-          <h1>ez.vet</h1>
+          <img src="./assets/image 3.png" alt="Logo">
         </div>
         <nav class="menu">
           <ul>
@@ -105,7 +105,7 @@
     flex: 1;
     background-color: #9fe2d1;
     padding: 2rem;
-    position: relative;
+    position:static;
   }
   
   .notification {
