@@ -1,0 +1,23 @@
+{
+    "app": {
+      "title": "ez.vet",
+      "menu": {
+        "home": "Inicio",
+        "appointments": "Citas",
+        "pets": "Mascotas",
+        "community": "Comunidad",
+        "contact": "Contacto"
+      },
+      "buttons": {
+        "add_content": "Añadir contenido"
+      },
+      "cards": {
+        "pending_appointment": "Cita Pendiente",
+        "pending_vaccine": "Vacuna Pendiente",
+        "date": "Fecha",
+        "hour": "Hora",
+        "pet": "Mascota"
+      }
+    }
+  }
+  
