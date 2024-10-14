@@ -1,0 +1,117 @@
+<template>
+  <div class="sidebar">
+    <div class="logo">
+      <h2>ez.<span>vet</span></h2>
+    </div>
+    <ul>
+      <li>
+        <router-link to="/" class="menu-item active">
+          <i class="fas fa-home"></i> {{ $t('home') }}
+        </router-link>
+      </li>
+      <li>
+        <router-link to="/citas" class="menu-item">
+          <i class="fas fa-book"></i> {{ $t('appointments') }}
+        </router-link>
+      </li>
+      <li>
+        <router-link to="/mascotas" class="menu-item">
+          <i class="fas fa-dog"></i> {{ $t('pets') }}
+        </router-link>
+      </li>
+      <li>
+        <router-link to="/comunidad" class="menu-item">
+          <i class="fas fa-users"></i> {{ $t('community') }}
+        </router-link>
+      </li>
+      <li>
+        <router-link to="/contacto" class="menu-item">
+          <i class="fas fa-globe"></i> {{ $t('contact') }}
+        </router-link>
+      </li>
+    </ul>
+
+    <!-- Íconos de perfil y cerrar sesión -->
+    <div class="user-icons">
+      <i class="fas fa-user-circle user-icon"></i> {{ $t('user') }}
+      <i class="fas fa-sign-out-alt logout-icon"></i> {{ $t('logout') }}
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "Sidebar",
+};
+</script>
+
+<style scoped>
+.sidebar {
+  background-color: #735DAB;
+  width: 250px;
+  height: 93vh;
+  padding: 20px;
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo h2 {
+  color: white;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.logo span {
+  color: #8BDCD6;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+ul li .menu-item {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+ul li .menu-item.active {
+  background-color: #9B83CE;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+ul li .menu-item:hover {
+  background-color: #846CCF;
+}
+
+/* Sección de íconos de usuario */
+.user-icons {
+  display: flex;
+  justify-content: space-between;  /* Separa los íconos a los lados */
+  align-items: center;
+  padding: 10px;
+  background-color: #9B83CE;
+  border-radius: 5px;
+}
+
+.user-icons .user-icon,
+.user-icons .logout-icon {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.user-icons .user-icon:hover,
+.user-icons .logout-icon:hover {
+  color: #8BDCD6;
+}
+</style>
