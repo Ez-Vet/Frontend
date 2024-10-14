@@ -18,6 +18,7 @@
           Español
         </button>
       </div>
+      <Post />
     </div>
   </div>
 </template>
@@ -25,12 +26,15 @@
 <script>
 import Sidebar from './components/Sidebar.vue';
 import Header from './components/Header.vue';
+import Card from "primevue/card";
+import Post from './components/Post.vue';
 
 export default {
   name: 'App',
   components: {
     Sidebar,
     Header,
+    Post,
   },
   methods: {
     changeLocale(locale) {

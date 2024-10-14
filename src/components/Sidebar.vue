@@ -5,7 +5,7 @@
     </div>
     <ul>
       <li>
-        <router-link to="/" class="menu-item active">
+        <router-link to="/" class="menu-item">
           <i class="fas fa-home"></i> {{ $t('home') }}
         </router-link>
       </li>
@@ -20,7 +20,7 @@
         </router-link>
       </li>
       <li>
-        <router-link to="/comunidad" class="menu-item">
+        <router-link to="/comunidad" class="menu-item active">
           <i class="fas fa-users"></i> {{ $t('community') }}
         </router-link>
       </li>

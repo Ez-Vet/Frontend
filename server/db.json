@@ -1,0 +1,19 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "name": "Buddy",
+      "content": "AHHHHH."
+    },
+    {
+      "id": "2",
+      "name": "Whiskers",
+      "content": "Vacaciones."
+    },
+    {
+      "id": "920d",
+      "name": "Sox",
+      "content": "Adoro el queso."
+    }
+  ]
+}

@@ -5,5 +5,7 @@
   "community": "Community",
   "contact": "Contact",
   "user": "User",
-  "logout": "Logout"
+  "logout": "Logout",
+  "post": "Post",
+  "content": "Content"
 }

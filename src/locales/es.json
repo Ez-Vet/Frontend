@@ -5,5 +5,7 @@
   "community": "Comunidad",
   "contact": "Contacto",
   "user": "Usuario",
-  "logout": "Cerrar sesión"
+  "logout": "Cerrar sesión",
+  "post": "Publicación",
+  "content": "Contenido"
 }
