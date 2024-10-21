@@ -1,19 +1,4 @@
 <template>
-    <div class="appointments-container">
-      <div class="header-content">
-        <h2>Último contenido agregado</h2>
-      </div>
-      <div class="appointment-list">
-        <!-- Lista de elementos de ejemplo -->
-        <div class="content-item" v-for="i in 5" :key="i">
-          <p class="menu-label">Menu Label</p>
-          <p class="menu-description">Menu description.</p>
-        </div>
-      </div>
-      <div class="add-content-btn">
-        <button>➕ Añadir contenido</button>
-      </div>
-    </div>
   </template>
   
   <script>
